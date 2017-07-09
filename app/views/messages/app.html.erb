@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rory Garrett Presents - VISAGE</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="Index.html"> <em class="fa fa-play-circle"></em>HOME</a></div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="About.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="app.html.erb"> --><%= redirect_to edit_message_path<a>FIND THE FACES</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="Contact.html">CONTACT</a>
+					</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+<section id="portfolio" class="section">
+
+
+<!--Portfolio-->
+
+   <div id="header2">
+      <div class="container">
+        <h1>CAN YOU SPOT ANY FACES?<hr class="style13"></h1>
+        <section id="Find The Faces" class="section">
+
+ <div class="row">
+            <div class="col-md-12 portfolio-item">
+                <a href="img/image3.JPG">
+                    <a class="btn" href="#Find The Faces">NO</a>
+                    <img src="img/Image1.JPG" class="img-thumbnail" alt="Visage" width="65%" height="65%">
+                    <a class="btn" href="#Find The Faces">YES</a>
+                </a>
+            </div>
+		  </div>
+			</div>
+	   </div>
+
+    <!--Portfolio End-->
+ </section>
+
+
+   <div class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2017 &middot; Web Design and Development &middot; <a href="http://yourwebsite.com/">Tom Garrett</a></p>
+    </div>
+  </body>
+</html>
+
+<%= link_to 'Show', @message %> |
+<%= link_to 'Back', messages_path %>
